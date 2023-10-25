@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Libre+Baskerville:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 *,
 *::before,
 *::after {
@@ -20,6 +20,10 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+section {
+  min-height: 100vh;
 }
 
 img,
@@ -125,4 +129,53 @@ ul {
 .nav__item:hover {
   text-decoration: underline;
   text-underline-offset: 0.3rem;
+}
+
+.home {
+  position: relative;
+}
+
+.introduction {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 10vw;
+  margin-top: 5rem;
+}
+.introduction__title {
+  font-family: var(--accent-font);
+  letter-spacing: -1px;
+  font-weight: var(--fw-bold);
+  font-size: var(--fz-700);
+  color: var(--white);
+}
+.introduction__subtitle {
+  font-family: var(--accent-font);
+  letter-spacing: 2px;
+  font-weight: var(--fw-regular);
+  font-size: var(--fz-500);
+  color: var(--off-white);
+  font-style: italic;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 12rem;
+  left: 50%;
+  translate: -50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.scroll__text {
+  font-family: var(--regular-font);
+  letter-spacing: 0;
+  font-weight: var(--fw-regular);
+  font-size: var(--fz-500);
+  color: var(--light-gray);
+  text-transform: uppercase;
+}
+.scroll img {
+  height: 1.6rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=style.css.map */

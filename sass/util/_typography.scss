@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Libre+Baskerville:ital,wght@0,700;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 :root {
     --regular-font: 'Lato', sans-serif;
     --accent-font: 'Libre Baskerville', serif;
@@ -22,6 +21,14 @@
 
 @mixin regular-font ($font-size, $font-weight, $color, $letter-spacing) {
     font-family: var(--regular-font);
+    letter-spacing: $letter-spacing;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+}
+
+@mixin accent-font ($font-size, $font-weight, $color, $letter-spacing) {
+    font-family: var(--accent-font);
     letter-spacing: $letter-spacing;
     font-weight: $font-weight;
     font-size: $font-size;
