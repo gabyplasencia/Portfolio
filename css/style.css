@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Libre+Baskerville:ital,wght@0,700;1,400&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  line-height: 1.4;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--black);
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --dark-blue: hsl(241, 100%, 10%);
+  --deep-blue: hsl(241, 67%, 26%);
+  --light-blue: hsl(241, 100%, 93%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 100%, 0.74);
+  --light-gray: hsl(0, 0%, 84%);
+  --gray: hsl(0, 0%, 39%, 0.93);
+  --lila: hsl(241, 84%, 74%);
+  --orange: hsl(14, 77%, 56%);
+  --yellow: hsl(61, 100%, 69%);
+  --purple: hsl(295, 100%, 37%);
+}
+
+:root {
+  --regular-font: "Lato", sans-serif;
+  --accent-font: "Libre Baskerville", serif;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-extrabold: 900;
+  --fz-100: 0.875rem;
+  --fz-200: 1rem;
+  --fz-300: 1.125rem;
+  --fz-400: 1.25rem;
+  --fz-500: 1.5rem;
+  --fz-600: 2rem;
+  --fz-700: 4.375rem;
+}/*# sourceMappingURL=style.css.map */

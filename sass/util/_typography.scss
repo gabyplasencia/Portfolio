@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Libre+Baskerville:ital,wght@0,700;1,400&display=swap');
+
+:root {
+    --regular-font: 'Lato', sans-serif;
+    --accent-font: 'Libre Baskerville', serif;
+    
+    //fw = font weight
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-extrabold: 900;
+    
+    //fz = font size
+    --fz-100: 0.875rem;
+    --fz-200: 1rem;
+    --fz-300: 1.125rem;
+    --fz-400: 1.25rem;
+    --fz-500: 1.5rem;
+    --fz-600: 2rem;
+    --fz-700: 4.375rem;
+}
