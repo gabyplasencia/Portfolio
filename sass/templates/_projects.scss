@@ -1,0 +1,24 @@
+@use '../util/' as u;
+
+#project {
+    width: u.$width-section;
+    margin: 0 auto;
+}
+
+.project {
+    display: flex;
+    gap: 3rem;
+
+    width: fit-content;
+    margin: 3rem auto;
+    
+    &__title {
+        @include u.accent-font(var(--fz-600), var(--fw-bold), var(--white), 1px);
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+    }
+
+    &__subtitle {
+        @include u.accent-font(var(--fz-400), var(--fw-regular), var(--off-white), 1px);        
+    }
+}

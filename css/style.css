@@ -105,6 +105,7 @@ ul {
   top: 2.5rem;
   left: 50%;
   translate: -50%;
+  z-index: 100;
 }
 .nav__list {
   display: flex;
@@ -179,4 +180,33 @@ ul {
   height: 1.6rem;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+#project {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.project {
+  display: flex;
+  gap: 3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 3rem auto;
+}
+.project__title {
+  font-family: var(--accent-font);
+  letter-spacing: 1px;
+  font-weight: var(--fw-bold);
+  font-size: var(--fz-600);
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.project__subtitle {
+  font-family: var(--accent-font);
+  letter-spacing: 1px;
+  font-weight: var(--fw-regular);
+  font-size: var(--fz-400);
+  color: var(--off-white);
 }/*# sourceMappingURL=style.css.map */
