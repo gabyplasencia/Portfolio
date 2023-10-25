@@ -19,3 +19,11 @@
     --fz-600: 2rem;
     --fz-700: 4.375rem;
 }
+
+@mixin regular-font ($font-size, $font-weight, $color, $letter-spacing) {
+    font-family: var(--regular-font);
+    letter-spacing: $letter-spacing;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+}

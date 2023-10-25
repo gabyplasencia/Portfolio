@@ -1,0 +1,28 @@
+@use '../util/' as u;
+
+.nav {
+    margin: 2.5rem auto;
+    width: fit-content;
+
+    &__list {
+        display: flex;
+        gap: 4rem;
+    }
+}
+
+.nav__item {
+    @include u.regular-font(var(--fz-200), var(--fw-regular), var(--off-white), 0);
+    text-transform: uppercase;
+}
+
+.nav__item.current-page {
+    font-weight: var(--fw-bold);
+    color: var(--light-blue);
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;//TEMPORAL STYLE
+}
+
+.nav__item:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
