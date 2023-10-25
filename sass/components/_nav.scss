@@ -1,9 +1,11 @@
 @use '../util/' as u;
 
 .nav {
-    margin: 2.5rem auto;
-    width: fit-content;
-
+    position: fixed;
+    top: 2.5rem; 
+    left: 50%;
+    translate: -50%;
+    
     &__list {
         display: flex;
         gap: 4rem;

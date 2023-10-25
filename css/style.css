@@ -101,9 +101,10 @@ ul {
 }
 
 .nav {
-  margin: 2.5rem auto;
-  width: -moz-fit-content;
-  width: fit-content;
+  position: fixed;
+  top: 2.5rem;
+  left: 50%;
+  translate: -50%;
 }
 .nav__list {
   display: flex;
@@ -139,7 +140,7 @@ ul {
   width: -moz-fit-content;
   width: fit-content;
   margin-left: 10vw;
-  margin-top: 5rem;
+  margin-top: 10vw;
 }
 .introduction__title {
   font-family: var(--accent-font);
