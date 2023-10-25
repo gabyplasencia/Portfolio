@@ -1,0 +1,50 @@
+@use '../util/' as u;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+    &__title {
+        @include u.regular-font(var(--fz-500), var(--fw-extrabold), var(--light-gray), 2px);
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        gap: 2rem;
+    }
+
+    &__subtitle {
+        @include u.regular-font(var(--fz-300), var(--fw-light), var(--white), 2px);
+        font-style: italic;
+        width: fit-content;
+        border-bottom: 1px solid var(--white);
+        margin-bottom: 0.7rem;
+    }
+
+    &__description {
+        @include u.regular-font(var(--fz-200), var(--fw-light), var(--white), 1px);
+        line-height: 1.5rem;
+    }
+
+    &__tech {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
+    &__tech-tool {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2rem;
+    }
+
+    &__icon-text {
+        @include u.regular-font(var(--fz-100), var(--fw-light), var(--white), 1px);
+    }
+}
