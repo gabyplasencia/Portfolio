@@ -9,8 +9,7 @@
     display: flex;
     gap: 3rem;
 
-    width: fit-content;
-    margin: 3rem auto;
+    margin: 5rem 0;
     
     &__title {
         @include u.accent-font(var(--fz-600), var(--fw-bold), var(--white), 1px);

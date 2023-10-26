@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.7rem;
     
     &__title {
         @include u.regular-font(var(--fz-500), var(--fw-extrabold), var(--light-gray), 2px);
@@ -21,9 +21,9 @@
     &__subtitle {
         @include u.regular-font(var(--fz-300), var(--fw-light), var(--white), 2px);
         font-style: italic;
-        width: fit-content;
-        border-bottom: 1px solid var(--white);
-        margin-bottom: 0.7rem;
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     &__description {
@@ -33,7 +33,8 @@
 
     &__tech {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
         gap: 0.5rem;
     }
 
@@ -41,10 +42,55 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0.2rem;
+        gap: 0.3rem;
     }
 
     &__icon-text {
         @include u.regular-font(var(--fz-100), var(--fw-light), var(--white), 1px);
     }
+
+    .link-wrapper,
+    .card__link {
+        display: flex;
+    }
+
+    .link-wrapper {
+        margin: 1rem 0;
+        gap: 2.5rem;
+    }
+
+    &__link {
+        gap: 0.6rem;
+        align-items: center;
+        @include u.regular-font(var(--fz-400), var(--fw-bold), var(--white), 0px);
+
+        img {
+            height: 1.2rem;
+            object-fit: contain;
+        }
+    }
+
+    &__link-text {
+        border: 2px solid;
+        border-image-slice: 1;
+        border-width: 3px;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        border-image-source: linear-gradient(90deg, var(--white) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+        cursor: pointer;
+    }
+}
+
+//width and background
+.card {
+    width: 50%;
+}
+
+.project + .project > .card {
+    width: 35%;
+}
+
+.card__tech-tool:nth-child(5) {
+    grid-column: span 2;
 }
