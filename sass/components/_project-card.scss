@@ -84,11 +84,24 @@
 
 //width and background
 .card {
-    width: 50%;
+    width: 60%;
+    max-width: 800px;
+    height: fit-content;
+    border-radius: 25px;
+    padding: 1.5rem 3rem;
+
+    background-color: radial-gradient();
+    background: radial-gradient(circle at top right, rgba(94, 94, 94, 0.307), transparent);
+    backdrop-filter: blur(20px);
+}
+
+.project:nth-child(odd) > .card{
+    background: radial-gradient(circle at top left, rgba(94, 94, 94, 0.307), transparent);
 }
 
 .project + .project > .card {
-    width: 35%;
+    width: 40%;
+    max-width: 500px;
 }
 
 .card__tech-tool:nth-child(5) {
