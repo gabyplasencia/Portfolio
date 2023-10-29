@@ -45,9 +45,6 @@ button,
 textarea,
 select {
   font: inherit;
-}
-
-button {
   border: none;
 }
 
@@ -344,11 +341,15 @@ ul {
 .contact {
   display: grid;
   place-items: center;
+  background-image: linear-gradient(180deg, var(--lila), var(--orange), var(--yellow));
 }
 .contact__wrapper {
   width: min(90vw, 30rem);
-  border: 1px solid white;
   border-radius: 30px;
+  background-color: hsla(0, 0%, 64%, 0.25);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  box-shadow: 0 0 20px 1px hsla(0, 0%, 100%, 0.36);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -360,7 +361,7 @@ ul {
   font-size: var(--fz-600);
   color: var(--white);
   text-transform: capitalize;
-  margin-block: 2rem;
+  margin-block: 1.5rem;
 }
 .contact__form {
   display: flex;
@@ -384,6 +385,7 @@ ul {
   color: var(--dark-blue);
   margin-bottom: 1.2rem;
   padding: 0.4rem 0.8rem;
+  background-color: hsla(0, 0%, 100%, 0.36);
 }
 .contact textarea {
   font-family: var(--regular-font);
@@ -392,6 +394,14 @@ ul {
   font-size: var(--fz-300);
   color: var(--dark-blue);
   padding: 0.4rem 0.8rem;
+  resize: none;
+  height: 10rem;
+  background-color: hsla(0, 0%, 100%, 0.36);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.contact textarea::-webkit-scrollbar {
+  display: none;
 }
 .contact *::-moz-placeholder {
   color: var(--gray);
@@ -405,13 +415,17 @@ ul {
   font-weight: var(--fw-bold);
   font-size: var(--fz-400);
   color: var(--white);
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   width: -moz-fit-content;
   width: fit-content;
   align-self: center;
+  padding: 1rem 4rem;
+  border-radius: 10px;
+  background-image: linear-gradient(130deg, var(--purple) 0%, var(--orange) 80%);
+  cursor: pointer;
 }
 .contact__divider {
-  margin-block: 2rem;
+  margin-block: 2.5rem;
 }
 .contact__links {
   display: flex;
