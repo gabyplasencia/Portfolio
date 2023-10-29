@@ -1,0 +1,64 @@
+@use '../util/' as u;
+
+.contact {
+    width: min(90vw, 35rem);
+    border: 1px solid white;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        @include u.regular-font(var(--fz-600), var(--fw-bold), var(--white), 1px);
+        text-transform: capitalize;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        @include u.regular-font(var(--fz-400), var(--fw-bold), var(--white), 1px);
+    }
+
+    input {
+        @include u.regular-font(var(--fz-300), var(--fw-regular), var(--dark-blue), 1px);
+    }
+
+    textarea {
+        @include u.regular-font(var(--fz-300), var(--fw-regular), var(--dark-blue), 1px);
+    }
+
+    *::placeholder {
+        color: var(--gray);
+    }
+
+    &__btn {
+        @include u.regular-font(var(--fz-400), var(--fw-bold), var(--white), 1px);
+    }
+
+    &__links {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__link-text{
+        @include u.regular-font(var(--fz-400), var(--fw-regular), var(--off-white), 1px);
+    }
+
+    &__nav-list {
+        display: flex;
+        gap: 0.6rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__nav-icon {
+        height: 1.5rem;
+        object-fit: contain;
+        fill: var(--off-white);
+    }
+}
+
