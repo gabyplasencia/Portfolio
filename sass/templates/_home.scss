@@ -6,8 +6,8 @@
 
 .introduction {
     width: fit-content;
-    margin-left: 10vw;
-    margin-top: 10vw;
+    margin-left: 15vw;
+    margin-top: 8vw;
     
     &__title{
         @include u.accent-font(var(--fz-700), var(--fw-bold), var(--white), -1px);
