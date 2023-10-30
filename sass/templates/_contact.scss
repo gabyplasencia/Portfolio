@@ -6,7 +6,7 @@
     background-image: linear-gradient(180deg, var(--lila), var(--orange), var(--yellow));
 
     &__wrapper {
-        width: min(90vw, 30rem);
+        width: min(90vw, 26rem);
         border-radius: 30px;
         background-color: hsl(0, 0%, 64%, 0.25);  
         backdrop-filter: blur(1rem);      
@@ -19,35 +19,35 @@
     }
 
     &__title {
-        @include u.regular-font(var(--fz-600), var(--fw-bold), var(--white), 1px);
+        @include u.regular-font(var(--fz-500), var(--fw-bold), var(--white), 1px);
         text-transform: capitalize;
-        margin-block: 1.5rem;
+        margin-block: 1.2rem;
     }
 
     &__form {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding-inline: 3rem;
+        padding-inline: min(3rem, 5vw);
     }
 
     label {
-        @include u.regular-font(var(--fz-400), var(--fw-bold), var(--white), 1px);
-        margin-bottom: 0.4rem;
+        @include u.regular-font(var(--fz-300), var(--fw-bold), var(--white), 1px);
+        margin-bottom: 0.2rem;
     }
 
     input {
-        @include u.regular-font(var(--fz-300), var(--fw-regular), var(--dark-blue), 1px);
-        margin-bottom: 1.2rem;
-        padding: 0.4rem 0.8rem;
+        @include u.regular-font(var(--fz-200), var(--fw-regular), var(--dark-blue), 1px);
+        margin-bottom: 1rem;
+        padding: 0.4rem 0.6rem;
         background-color: hsl(0, 0%, 100%, 0.36);
     }
 
     textarea {
-        @include u.regular-font(var(--fz-300), var(--fw-regular), var(--dark-blue), 1px);
-        padding: 0.4rem 0.8rem;
+        @include u.regular-font(var(--fz-200), var(--fw-regular), var(--dark-blue), 1px);
+        padding: 0.4rem 0.6rem;
         resize: none;
-        height: 10rem;
+        height: 8rem;
         background-color: hsl(0, 0%, 100%, 0.36);
 
         -ms-overflow-style: none;  
@@ -63,18 +63,18 @@
     }
 
     &__btn {
-        @include u.regular-font(var(--fz-400), var(--fw-bold), var(--white), 1px);
+        @include u.regular-font(var(--fz-300), var(--fw-bold), var(--white), 1px);
         margin-top: 1.5rem;
         width: fit-content;
         align-self: center;
-        padding: 1rem 4rem;
+        padding: 0.7rem 3.5rem;
         border-radius: 10px;
         background-image: linear-gradient(130deg, var(--purple) 0%, var(--orange) 80%);
         cursor: pointer;
     }
 
     &__divider {
-        margin-block: 2.5rem;
+        margin-block: 1.4rem;
     }
 
     &__links {
@@ -83,7 +83,7 @@
     }
 
     &__link-text{
-        @include u.regular-font(var(--fz-400), var(--fw-regular), var(--off-white), 1px);
+        @include u.regular-font(var(--fz-300), var(--fw-regular), var(--off-white), 1px);
     }
 
     &__nav-list {
