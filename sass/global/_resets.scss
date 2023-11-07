@@ -11,7 +11,7 @@ body {
     line-height: 1.4;
     height: 100vh;
     overflow-x: hidden;
-    background-color: var(--dark-blue);
+    
     color: white; /////DELETE
 
     -ms-overflow-style: none;  
@@ -25,6 +25,7 @@ body::-webkit-scrollbar {
 section {
     min-height: 100vh;
     min-width: 100vw;
+    position: relative;
 }
 
 img,

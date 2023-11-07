@@ -12,7 +12,6 @@ body {
   line-height: 1.4;
   height: 100vh;
   overflow-x: hidden;
-  background-color: var(--dark-blue);
   color: white;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -25,6 +24,7 @@ body::-webkit-scrollbar {
 section {
   min-height: 100vh;
   min-width: 100vw;
+  position: relative;
 }
 
 img,
@@ -61,48 +61,114 @@ ul {
   }
 }
 .bg {
+  position: absolute;
+}
+
+.bg-color {
   position: fixed;
+  inset: 0;
+  background-image: linear-gradient(180deg, var(--dark-blue), var(--deep-blue));
+  z-index: -200;
 }
 
 #stars-bg {
+  position: fixed;
   inset: 1rem;
+  z-index: -100;
+}
+
+#stars2-bg {
+  position: fixed;
+  top: 25vh;
+  right: 50%;
+  scale: 0.1;
+  opacity: 0;
   z-index: -100;
 }
 
 #moon {
   height: 43vh;
-  top: 15vh;
+  top: 0;
   right: 32%;
   z-index: -90;
 }
 
 #night-big-mountain {
   transform: scale(1.3);
-  top: 28vh;
+  top: 12vh;
   left: 17%;
   z-index: -80;
 }
 
 #night-small-mountain {
   height: 45vh;
-  top: 44%;
+  top: 30%;
   right: 58vw;
   z-index: -50;
 }
 
 #night-sakura {
   height: 15rem;
-  bottom: 0;
+  top: 50vh;
   right: -2rem;
   z-index: -50;
 }
 
 #night-lake {
   width: 100vw;
+  left: 0;
+  top: 65vh;
+  z-index: -60;
+}
+
+#top-stars {
   top: 0;
   left: 0;
-  top: 80%;
-  z-index: -60;
+  right: 0;
+  opacity: 0;
+  z-index: -100;
+}
+
+#sun {
+  top: 70vh;
+  right: -40vw;
+  /* top: 70vh;
+   right: 30vh;*/
+  z-index: -100;
+}
+
+#day-big-mountain {
+  top: 20vh;
+  left: -2000px;
+  /* top: 20vh;
+   right: 40vw;*/
+  z-index: -90;
+}
+
+#day-small-mountain {
+  top: 40vh;
+  left: -1000px;
+  /* top: 40vh;
+   right: 55vw;*/
+  z-index: -70;
+}
+
+#day-lake {
+  top: 1000px;
+  left: 0;
+  right: 0;
+  transform: scale(1.2);
+  /* top: 70vh;
+   */
+  z-index: -80;
+}
+
+#day-sakura-island {
+  top: 1000px;
+  right: -10vw;
+  /* top: 30vh;
+   */
+  z-index: -70;
 }
 
 :root {
@@ -379,7 +445,6 @@ ul {
 .contact {
   display: grid;
   place-items: center;
-  background-image: linear-gradient(180deg, var(--lila), var(--orange), var(--yellow));
 }
 .contact__wrapper {
   width: min(90vw, 26rem);
