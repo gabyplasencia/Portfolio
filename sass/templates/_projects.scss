@@ -1,8 +1,7 @@
 @use '../util/' as u;
 
 #project {
-    width: u.$width-section;
-    margin: 0 auto;
+    padding-inline: 5vw;
 
     display: flex;
     flex-direction: column;
