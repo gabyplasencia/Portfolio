@@ -156,9 +156,10 @@ x: -400,
 
 tl3.to("#night-lake", {
     scale: 2.5,
-    y: "70vh",
+    y: "68vh",
 })
     .to("#night-lake", {
+        scale: 0.1,
         opacity: 0,
     });
 

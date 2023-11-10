@@ -421,7 +421,7 @@ ul {
   font-family: var(--accent-font);
   letter-spacing: 1px;
   font-weight: var(--fw-bold);
-  font-size: var(--fz-600);
+  font-size: var(--fz-700);
   color: var(--white);
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -430,7 +430,7 @@ ul {
   font-family: var(--accent-font);
   letter-spacing: 1px;
   font-weight: var(--fw-regular);
-  font-size: var(--fz-400);
+  font-size: var(--fz-500);
   color: var(--off-white);
 }
 .project__image {
