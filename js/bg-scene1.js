@@ -117,20 +117,6 @@ const tl8 = gsap.timeline({
 }
 });
 
-const tl9 = gsap.timeline({
-    scrollTrigger: {
-    trigger: "#stars2-bg",
-    start: "top 25%",
-    end: "center 25%",
-    /*markers: {
-        startColor: "white",
-        endColor: "yellow",
-    },*/
-    scrub: 3,
-}
-});
-
-
 tl.to("#night-big-mountain", {
     scale: 3,
     x: 500,
@@ -164,9 +150,9 @@ tl3.to("#night-lake", {
     });
 
 tl4.to("#moon", {
-    scale: 3,
-    y: "-20vh",
-    x: 700,
+    scale: 2.5,
+    y: "-70vh",
+    x: 1200,
 });
 
 tl5.to("#night-sakura", {
@@ -190,8 +176,3 @@ tl8.to("#stars-bg", {
     opacity: 0,
 });
 
-tl9.to("#stars2-bg", {
-    scale: 2,
-    x: 300,
-    opacity: 1,
-});

@@ -17,11 +17,10 @@
 }
 
 #stars2-bg {
-    position: fixed;
-    top: 15vh;
-    right: 35vw;
+    top: -5vh;
     scale: 0.5;
     opacity: 0;
+    transform: rotate(180);
     z-index: -100;
 }
 
@@ -29,7 +28,15 @@
     position: fixed;
     height: 40vh;
     top: 20vh;
-    right: 35%;
+    right: 25%;
+    z-index: -90;
+}
+
+#moon2 {
+    height: 40vh;
+    transform: scale(2.5);
+    top: -35vh;
+    right: -40%;
     z-index: -90;
 }
 
