@@ -71,14 +71,17 @@
     }
 
     &__link-text {
-        border: 2px solid;
+        border: 3px solid;
         border-image-slice: 1;
-        border-width: 3px;
         border-left: 0;
         border-right: 0;
         border-top: 0;
-        border-image-source: linear-gradient(90deg, var(--white) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+        border-image-source: linear-gradient(90deg, var(--white) 50%, rgba(0, 0, 0, 0) 50%);
+        transition: border-image-source 300ms;
         cursor: pointer;
+    }
+    &__link-text:hover {
+        border-image-source: linear-gradient(90deg, var(--white) 100%, rgba(0, 0, 0, 0) 100%);
     }
 }
 

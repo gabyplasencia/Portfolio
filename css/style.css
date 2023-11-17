@@ -231,14 +231,18 @@ ul {
   text-transform: uppercase;
 }
 
-.nav__item.current-page {
+.nav__link {
+  transition: all 300ms;
+}
+
+.nav__link.current-page {
   font-weight: var(--fw-bold);
   color: var(--light-blue);
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
 
-.nav__item:hover {
+.nav__link:hover {
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
@@ -324,14 +328,17 @@ ul {
      object-fit: contain;
 }
 .card__link-text {
-  border: 2px solid;
+  border: 3px solid;
   border-image-slice: 1;
-  border-width: 3px;
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  border-image-source: linear-gradient(90deg, var(--white) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+  border-image-source: linear-gradient(90deg, var(--white) 50%, rgba(0, 0, 0, 0) 50%);
+  transition: border-image-source 300ms;
   cursor: pointer;
+}
+.card__link-text:hover {
+  border-image-source: linear-gradient(90deg, var(--white) 100%, rgba(0, 0, 0, 0) 100%);
 }
 
 .card {

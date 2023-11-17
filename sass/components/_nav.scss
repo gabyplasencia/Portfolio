@@ -17,14 +17,18 @@
     text-transform: uppercase;
 }
 
-.nav__item.current-page {
+.nav__link {
+    transition: all 300ms;
+}
+
+.nav__link.current-page {
     font-weight: var(--fw-bold);
     color: var(--light-blue);
     text-decoration: underline;
     text-underline-offset: 0.3rem;//TEMPORAL STYLE
 }
 
-.nav__item:hover {
+.nav__link:hover {
     text-decoration: underline;
     text-underline-offset: 0.3rem;
 }
