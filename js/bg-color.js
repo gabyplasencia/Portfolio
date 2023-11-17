@@ -48,7 +48,7 @@ tlBgColor2.to(".bg-color", {
     "--_color-bottom": "#8886F5",
 })    
     .to(".bg-color", {
-    "--_color-top": "#8886F5",
+    "--_color-top": "#9C7ECD",
     "--_color-medium": "#E66239",
     "--_color-bottom": "#FCFF61",
     })
