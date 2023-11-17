@@ -15,7 +15,7 @@
                                         var(--_color-bottom));
     z-index: -200;
     //***This option was not viable because GSAP does not animate
-    //***background-position, but it does animate custom variables
+    //***background-position, but it does animate custom variables although sometimes glitches
     // background-size: 100% 300%;
     // background-position: top;
     // transition: background-position 1000ms ease-in-out;
