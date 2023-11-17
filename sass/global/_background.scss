@@ -3,18 +3,21 @@
 }
 
 .bg-color {
+    --_color-top: var(--dark-blue);
+    --_color-medium: var(--deep-blue);
+    --_color-bottom: var(--deep-blue);  
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 100vh;
-    background-image: linear-gradient(180deg, var(--dark-blue) 0%, var(--deep-blue) 50%, 
-                      var(--lila), var(--orange), var(--yellow));
+    background-image: linear-gradient(180deg, var(--_color-top) 10%, var(--_color-medium) 60%, 
+                                        var(--_color-bottom));
+    z-index: -200;
     //***This option was not viable because GSAP does not animate
     //***background-position, but it does animate custom variables
     // background-size: 100% 300%;
     // background-position: top;
-    // z-index: -200;
     // transition: background-position 1000ms ease-in-out;
 }
 
