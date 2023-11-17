@@ -74,3 +74,18 @@ gsap.to("#day-sakura-island", {
         scrub: 3,
     }
 });
+
+gsap.to("#sun", {
+    scale: 1.2,
+    y: "-10vh",
+    scrollTrigger: {
+        trigger: "#sun",
+        start: "0% 75%",
+        end: "center 75%",
+        // markers: {
+        //     startColor: "white",
+        //     endColor: "yellow",
+        // },
+        scrub: 2,
+    }
+});

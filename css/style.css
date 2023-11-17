@@ -147,8 +147,8 @@ ul {
 }
 
 #sun {
-  top: 70vh;
-  right: -40vw;
+  bottom: -8vh;
+  right: 8vw;
   z-index: -100;
 }
 
@@ -213,14 +213,13 @@ ul {
 
 .nav {
   position: fixed;
-  top: 1.3rem;
-  left: 50%;
-  translate: -50%;
+  top: 2rem;
+  right: 10%;
   z-index: 100;
 }
 .nav__list {
   display: flex;
-  gap: 4rem;
+  gap: 6rem;
 }
 
 .nav__item {
