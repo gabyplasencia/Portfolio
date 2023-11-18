@@ -328,17 +328,21 @@ ul {
      object-fit: contain;
 }
 .card__link-text {
-  border: 3px solid;
-  border-image-slice: 1;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  border-image-source: linear-gradient(90deg, var(--white) 50%, rgba(0, 0, 0, 0) 50%);
-  transition: border-image-source 300ms;
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
 }
-.card__link-text:hover {
-  border-image-source: linear-gradient(90deg, var(--white) 100%, rgba(0, 0, 0, 0) 100%);
+.card__link-line {
+  height: 4px;
+  width: 100%;
+  background-image: linear-gradient(90deg, var(--white) 50%, rgba(0, 0, 0, 0) 50%);
+  background-size: 200%;
+  background-position: 50%;
+  transition: background-position 300ms;
+}
+.card__link-text:hover > .card__link-line {
+  background-position: 0%;
 }
 
 .card {
