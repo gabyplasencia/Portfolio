@@ -25,6 +25,8 @@
     flex-direction: column;
     gap: 0.3rem;
 
+    animation: scroll 2000ms ease-in-out alternate infinite;
+
     &__text {
         @include u.regular-font(var(--fz-500), var(--fw-regular), var(--light-gray), 0);
         text-transform: uppercase;
@@ -33,5 +35,15 @@
     img {
         height: 1.6rem;
         object-fit: contain;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(15px);
     }
 }

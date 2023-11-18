@@ -401,6 +401,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+  animation: scroll 2000ms ease-in-out alternate infinite;
 }
 .scroll__text {
   font-family: var(--regular-font);
@@ -416,6 +417,14 @@ ul {
      object-fit: contain;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
 #project {
   padding-inline: 5vw;
   margin-bottom: 25vh;
