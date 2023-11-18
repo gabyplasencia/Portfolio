@@ -68,8 +68,19 @@
         align-self: center;
         padding: 0.7rem 3.5rem;
         border-radius: 10px;
-        background-image: linear-gradient(130deg, var(--purple) 0%, var(--orange) 80%);
+        background-image: linear-gradient(110deg, var(--purple) , var(--orange), var(--purple));
+        background-size: 200%;
+        background-position: left;
+        transition: background-position 300ms;
         cursor: pointer;
+    }
+
+    &__btn:hover {
+        background-position: right;
+    }
+
+    &__btn:focus {
+        transform: scale(0.95);
     }
 
     &__divider {
