@@ -4,7 +4,7 @@ const tlBgColor = gsap.timeline({
     scrollTrigger: {
         trigger: "#project",
         start: "0% bottom",
-        end: "bottom center",
+        end: "85% center",
         // markers: {
         //     startColor: "white",
         //     endColor: "yellow",

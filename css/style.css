@@ -65,10 +65,22 @@ ul {
   position: absolute;
 }
 
+@property --_color-top {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: var(--dark-blue);
+}
+@property --_color-medium {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: var(--deep-blue);
+}
+@property --_color-bottom {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: var(--deep-blue);
+}
 .bg-color {
-  --_color-top: var(--dark-blue);
-  --_color-medium: var(--deep-blue);
-  --_color-bottom: var(--deep-blue);
   position: fixed;
   top: 0;
   left: 0;

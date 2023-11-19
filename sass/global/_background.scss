@@ -2,10 +2,26 @@
     position: absolute;
 }
 
-.bg-color {
-    --_color-top: var(--dark-blue);
-    --_color-medium: var(--deep-blue);
-    --_color-bottom: var(--deep-blue);  
+//With this I give to the browser more information
+@property --_color-top {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: var(--dark-blue);
+}
+
+@property --_color-medium {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: var(--deep-blue);
+}
+
+@property --_color-bottom {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: var(--deep-blue);
+}
+
+.bg-color { 
     position: fixed;
     top: 0;
     left: 0;
@@ -14,8 +30,8 @@
     background-image: linear-gradient(180deg, var(--_color-top) 0%, var(--_color-medium) 35%, 
                                         var(--_color-bottom) 80%);
     z-index: -200;
-    //***This option was not viable because GSAP does not animate
-    //***background-position, but it does animate custom variables although sometimes glitches
+
+    //***This option was not viable because GSAP does not animate background-position
     // background-size: 100% 300%;
     // background-position: top;
     // transition: background-position 1000ms ease-in-out;
