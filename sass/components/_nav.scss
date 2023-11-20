@@ -12,18 +12,14 @@
     }
 }
 
-.nav__item {
-    @include u.regular-font(var(--fz-200), var(--fw-regular), var(--off-white), 0);
-    text-transform: uppercase;
-}
-
 .nav__link {
-    transition: all 300ms;
+    @include u.regular-font(var(--fz-200), var(--fw-regular), var(--light-blue), 0);
+    text-transform: uppercase;
 }
 
 .nav__link.current-page {
     font-weight: var(--fw-bold);
-    color: var(--light-blue);
+    color: var(--off-white);
     text-decoration: underline;
     text-underline-offset: 0.3rem;
 }
@@ -31,4 +27,10 @@
 .nav__link:hover {
     text-decoration: underline;
     text-underline-offset: 0.3rem;
+}
+
+@include u.media(500px) {
+    .nav {
+        display: none;
+    }
 }
