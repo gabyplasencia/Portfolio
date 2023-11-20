@@ -43,7 +43,18 @@ const tlMoon = gsap.timeline({
     }
 });
 
-const tlStarts = gsap.timeline({
+tlMoon.to("#moon2", {
+    scale: 2.7,
+    x: "-25vw",
+}) 
+    .to("#moon2" , {
+    scale: 2.5,
+    })
+
+gsap.to("#stars2-bg", {
+    scale: 2,
+    opacity: 1,
+    rotation: 2,
     scrollTrigger: {
         trigger: "#project",
         start: "top 95%",
@@ -54,19 +65,6 @@ const tlStarts = gsap.timeline({
         // },
         scrub: 3,
     }
-});
-
-tlMoon.to("#moon2", {
-    scale: 2.7,
-    x: "-25vw",
-}).to("#moon2" , {
-    scale: 2.5,
-})
-
-tlStarts.to("#stars2-bg", {
-    scale: 2,
-    opacity: 1,
-    rotation: 2,
 });
 
 

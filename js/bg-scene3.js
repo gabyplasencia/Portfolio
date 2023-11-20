@@ -1,6 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const tlTopStars = gsap.timeline({
+gsap.to("#top-stars", {
+    opacity: 1.5,
+    y: "10vh",
     scrollTrigger: {
         trigger: "#top-stars",
         start: "0% 70%",
@@ -11,11 +13,6 @@ const tlTopStars = gsap.timeline({
         // },
         scrub: 2,
     }
-});
-
-tlTopStars.to("#top-stars", {
-    opacity: 1.5,
-    y: "10vh",
 });
 
 gsap.to("#day-big-mountain", {
