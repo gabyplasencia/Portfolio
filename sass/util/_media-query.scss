@@ -1,4 +1,4 @@
-@mixin media ($width) {
+@mixin media ($width: 800px) {
         @media (max-width: $width) {
             @content;
         }

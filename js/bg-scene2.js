@@ -51,20 +51,41 @@ tlMoon.to("#moon2", {
     scale: 2.5,
     })
 
-gsap.to("#stars2-bg", {
-    scale: 2,
-    opacity: 1,
-    rotation: 2,
-    scrollTrigger: {
-        trigger: "#project",
-        start: "top 95%",
-        end: "bottom center",
-        // markers: {
-        //     startColor: "white",
-        //     endColor: "yellow",
-        // },
-        scrub: 3,
-    }
+mm.add("(max-width: 800px)", () => {
+    gsap.to("#stars2-bg", {
+        scale: 2,
+        opacity: 1,
+        rotation: -5,
+        scrollTrigger: {
+            trigger: "#project",
+            start: "top 70%",
+            end: "80% center",
+            pin: "#stars2-bg",
+            // markers: { ME QUEDE AQUI
+            //     startColor: "white",
+            //     endColor: "yellow",
+            // },
+            scrub: 3,
+        }
+    });
+});
+mm.add("(min-width: 801px)", () => {
+    gsap.to("#stars2-bg", {
+        scale: 1.5,
+        opacity: 1,
+        rotation: 8,
+        scrollTrigger: {
+            trigger: "#project",
+            start: "top 95%",
+            end: "80% 60%",
+            pin: "#stars2-bg",
+            // markers: {
+            //     startColor: "white",
+            //     endColor: "yellow",
+            // },
+            scrub: 3,
+        }
+    });
 });
 
 

@@ -8,6 +8,7 @@ function raf(time) {
 requestAnimationFrame(raf)
 
 gsap.registerPlugin(ScrollTrigger);
+let mm = gsap.matchMedia();
 
 const tl = gsap.timeline({
     scrollTrigger: {
@@ -80,20 +81,39 @@ tl3.to("#night-lake", {
         opacity: 0,
     });
 
-gsap.to("#moon", {
-    scale: 2.5,
-    y: "-70vh",
-    x: 1200,
-    scrollTrigger: {
-        trigger: "#moon",
-        start: "top 10%",
-        end: "bottom 10%",
-       /* markers: {
-            startColor: "white",
-            endColor: "yellow",
-        },*/
-        scrub: 3,
-    }
+mm.add("(max-width: 800px)", () => {
+    gsap.to("#moon", {
+        scale: 2.5,
+        y: "-70vh",
+        x: 1200,
+        scrollTrigger: {
+            trigger: "#moon",
+            start: "top 30%",
+            end: "bottom 10%",
+            // markers: {
+            //     startColor: "white",
+            //     endColor: "yellow",
+            // },
+            scrub: 3,
+        }
+    });
+});
+mm.add("(min-width: 801px)", () => {
+    gsap.to("#moon", {
+        scale: 2.5,
+        y: "-70vh",
+        x: 1200,
+        scrollTrigger: {
+            trigger: "#moon",
+            start: "top 10%",
+            end: "bottom 10%",
+           /* markers: {
+                startColor: "white",
+                endColor: "yellow",
+            },*/
+            scrub: 3,
+        }
+    });
 });
 
 gsap.to("#night-sakura", {
@@ -112,48 +132,106 @@ gsap.to("#night-sakura", {
     }
 });
 
-gsap.to(".introduction", {
+
+mm.add("(max-width: 800px)", () => {
+    gsap.to(".introduction", {
     x: -900,
     opacity: 0,
     scrollTrigger: {
         trigger: ".introduction",
-        start: "top 10%",
-        end: "center 10%",
-        markers: {
-            startColor: "white",
-            endColor: "yellow",
-        },
+        start: "45% 10%",
+        end: "bottom 10%",
+        // markers: {
+        //     startColor: "white",
+        //     endColor: "yellow",
+        // },
         scrub: 2,
     }
+    });
+});
+mm.add("(min-width: 801px)", () => {
+    gsap.to(".introduction", {
+        x: -900,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: ".introduction",
+            start: "top 10%",
+            end: "center 10%",
+            // markers: {
+            //     startColor: "green",
+            //     endColor: "yellow",
+            // },
+            scrub: 2,
+        }
+    });
 });
 
-gsap.to(".scroll", {
-    opacity: 0,
-    scrollTrigger: {
-        trigger: ".scroll",
-        start: "center 80%",
-        end: "center 80%",
-       /* markers: {
-            startColor: "white",
-            endColor: "yellow",
-        },*/
-        scrub: 1,
-    }
+
+mm.add("(max-width: 800px)", () => {
+    gsap.to("#stars-bg", {
+        scale: 2,
+        rotate: -20,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: "#stars-bg",
+            start: "center 40%",
+            end: "center top",
+            // markers: {
+            //     startColor: "white",
+            //     endColor: "yellow",
+            // },
+            scrub: 3,
+        }
+    });
+});
+mm.add("(min-width: 801px)", () => {
+    gsap.to("#stars-bg", {
+        scale: 2,
+        rotate: 30,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: "#stars-bg",
+            start: "30% 20%",
+            end: "center 20%",
+            /*markers: {
+                startColor: "white",
+                endColor: "yellow",
+            },*/
+            scrub: 3,
+        }
+    });
 });
 
-gsap.to("#stars-bg", {
-    scale: 2,
-    rotate: 30,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: "#stars-bg",
-        start: "30% 20%",
-        end: "center 20%",
-        /*markers: {
-            startColor: "white",
-            endColor: "yellow",
-        },*/
-        scrub: 3,
-    }
+
+mm.add("(max-width: 800px)", () => {
+    gsap.to(".scroll", {
+        opacity: 0,
+        scrollTrigger: {
+            trigger: ".scroll",
+            start: "top 75%",
+            end: "15% 75%",
+            // markers: {
+            //     startColor: "white",
+            //     endColor: "yellow",
+            // },
+            scrub: 1,
+        }
+    });
 });
+mm.add("(min-width: 801px)", () => {
+    gsap.to(".scroll", {
+        opacity: 0,
+        scrollTrigger: {
+            trigger: ".scroll",
+            start: "center 80%",
+            end: "center 80%",
+            // markers: {
+            //     startColor: "white",
+            //     endColor: "yellow",
+            // },
+            scrub: 1,
+        }
+    });
+});
+
 

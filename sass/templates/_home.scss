@@ -4,9 +4,18 @@
     width: fit-content;
     margin-left: 15vw;
     margin-top: 8vw;
+
+    @include u.media() {
+        margin-left: 4vw;
+        margin-top: 30vw;
+    }
     
     &__title{
         @include u.accent-font(var(--fz-700), var(--fw-bold), var(--white), -1px);
+        @include u.media() {
+            line-height: 1.2;
+        }
+        margin-bottom: 1rem;
     }
 
     &__subtitle{
@@ -20,6 +29,9 @@
     bottom: max(13vw, 12rem);
     left: 50%;
     translate: -50%;
+    @include u.media() {
+        bottom: 15vh;
+    }
 
     display: flex;
     flex-direction: column;

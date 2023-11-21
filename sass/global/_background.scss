@@ -44,14 +44,24 @@
     position: fixed;
     inset: 1rem;
     z-index: -100;
+    @include u.media(){
+        width: 150svh;
+        max-width: unset;
+        inset: 0;
+        transform: rotate(360deg);
+    }
 }
 
 #stars2-bg {
-    top: -5vh;
+    top: -50vh;
     scale: 0.5;
     opacity: 0;
-    transform: rotate(180);
     z-index: -100;
+    @include u.media(){
+        width: 150svh;
+        max-width: unset;
+        transform: rotate(360deg);
+    }
 }
 
 #moon {
@@ -60,6 +70,10 @@
     top: 20vh;
     right: 30%;
     z-index: -90;
+    @include u.media() {
+        top: 33vh;
+        right: -10%;
+    }
 }
 
 #moon2 {
@@ -68,7 +82,7 @@
     top: -35vh;
     right: -40%;
     z-index: -90;
-    @include u.media(500px){
+    @include u.media(){
         display: none;
 }
 }
@@ -78,7 +92,7 @@
     top: 2vh;
     left: 17%;
     z-index: -80;
-    @include u.media(500px){
+    @include u.media(){
         display: none;
 }
 }
@@ -89,7 +103,7 @@
     top: 30%;
     right: 58vw;
     z-index: -50;
-    @include u.media(500px){
+    @include u.media(){
         display: none;
 }
 }
@@ -99,7 +113,7 @@
     top: 60vh;
     right: -2rem;
     z-index: -50;
-    @include u.media(500px){
+    @include u.media(){
         display: none;
 }
 }
@@ -109,7 +123,7 @@
     left: 0;
     top: 65vh;
     z-index: -60;
-    @include u.media(500px){
+    @include u.media(){
         display: none;
 }   
 }
@@ -127,7 +141,7 @@
     bottom: -8vh;
     right: 8vw; 
     z-index: -100;
-    @include u.media(500px){
+    @include u.media(){
         display: none;
 }      
 }
@@ -136,7 +150,7 @@
     top: 35vh;
     left: -20%; 
     z-index: -90;
-    @include u.media(500px){
+    @include u.media(){
         display: none;
 }  
 }
@@ -145,7 +159,7 @@
     bottom: 8vh;
     left: -40%; 
     z-index: -70;
-    @include u.media(500px){
+    @include u.media(){
         display: none;
 }  
 }
@@ -157,7 +171,7 @@
     transform: scale(1.2) rotateX(50deg);
     opacity: 0;
     z-index: -80;
-    @include u.media(500px){
+    @include u.media(){
         display: none;
 }  
 }
@@ -168,7 +182,7 @@
     bottom: 0;
     right: -20vw;
     z-index: -70;  
-    @include u.media(500px){
+    @include u.media(){
         display: none;
 }
 }

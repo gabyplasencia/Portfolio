@@ -119,13 +119,27 @@ ul {
   inset: 1rem;
   z-index: -100;
 }
+@media (max-width: 800px) {
+  #stars-bg {
+    width: 150svh;
+    max-width: unset;
+    inset: 0;
+    transform: rotate(360deg);
+  }
+}
 
 #stars2-bg {
-  top: -5vh;
+  top: -50vh;
   scale: 0.5;
   opacity: 0;
-  transform: rotate(180);
   z-index: -100;
+}
+@media (max-width: 800px) {
+  #stars2-bg {
+    width: 150svh;
+    max-width: unset;
+    transform: rotate(360deg);
+  }
 }
 
 #moon {
@@ -135,6 +149,12 @@ ul {
   right: 30%;
   z-index: -90;
 }
+@media (max-width: 800px) {
+  #moon {
+    top: 33vh;
+    right: -10%;
+  }
+}
 
 #moon2 {
   height: 40vh;
@@ -143,7 +163,7 @@ ul {
   right: -40%;
   z-index: -90;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #moon2 {
     display: none;
   }
@@ -155,7 +175,7 @@ ul {
   left: 17%;
   z-index: -80;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #night-big-mountain {
     display: none;
   }
@@ -168,7 +188,7 @@ ul {
   right: 58vw;
   z-index: -50;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #night-small-mountain {
     display: none;
   }
@@ -180,7 +200,7 @@ ul {
   right: -2rem;
   z-index: -50;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #night-sakura {
     display: none;
   }
@@ -192,7 +212,7 @@ ul {
   top: 65vh;
   z-index: -60;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #night-lake {
     display: none;
   }
@@ -212,7 +232,7 @@ ul {
   right: 8vw;
   z-index: -100;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #sun {
     display: none;
   }
@@ -223,7 +243,7 @@ ul {
   left: -20%;
   z-index: -90;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #day-big-mountain {
     display: none;
   }
@@ -234,7 +254,7 @@ ul {
   left: -40%;
   z-index: -70;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #day-small-mountain {
     display: none;
   }
@@ -248,7 +268,7 @@ ul {
   opacity: 0;
   z-index: -80;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #day-lake {
     display: none;
   }
@@ -261,7 +281,7 @@ ul {
   right: -20vw;
   z-index: -70;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #day-sakura-island {
     display: none;
   }
@@ -449,12 +469,24 @@ ul {
   margin-left: 15vw;
   margin-top: 8vw;
 }
+@media (max-width: 800px) {
+  .introduction {
+    margin-left: 4vw;
+    margin-top: 30vw;
+  }
+}
 .introduction__title {
   font-family: var(--accent-font);
   letter-spacing: -1px;
   font-weight: var(--fw-bold);
   font-size: var(--fz-700);
   color: var(--white);
+  margin-bottom: 1rem;
+}
+@media (max-width: 800px) {
+  .introduction__title {
+    line-height: 1.2;
+  }
 }
 .introduction__subtitle {
   font-family: var(--accent-font);
@@ -474,6 +506,11 @@ ul {
   flex-direction: column;
   gap: 0.3rem;
   animation: scroll 2000ms ease-in-out alternate infinite;
+}
+@media (max-width: 800px) {
+  .scroll {
+    bottom: 15vh;
+  }
 }
 .scroll__text {
   font-family: var(--regular-font);
