@@ -142,7 +142,9 @@
     right: 8vw; 
     z-index: -100;
     @include u.media(){
-        display: none;
+        inset: 0;
+        left: 60%;
+        top: 60vh;
 }      
 }
 
@@ -151,7 +153,12 @@
     left: -20%; 
     z-index: -90;
     @include u.media(){
-        display: none;
+        height: 80vh;
+        max-width: unset;
+        object-fit: contain;
+        inset: 0;
+        top: 45vh;
+        left: -300%;
 }  
 }
 

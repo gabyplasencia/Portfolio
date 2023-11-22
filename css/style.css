@@ -234,7 +234,9 @@ ul {
 }
 @media (max-width: 800px) {
   #sun {
-    display: none;
+    inset: 0;
+    left: 60%;
+    top: 60vh;
   }
 }
 
@@ -245,7 +247,13 @@ ul {
 }
 @media (max-width: 800px) {
   #day-big-mountain {
-    display: none;
+    height: 80vh;
+    max-width: unset;
+    -o-object-fit: contain;
+       object-fit: contain;
+    inset: 0;
+    top: 45vh;
+    left: -300%;
   }
 }
 
