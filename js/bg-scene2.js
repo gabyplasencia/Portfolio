@@ -8,10 +8,10 @@ projects.forEach(project => {
         trigger: project,
         start: "top 60%",
         end: "center 60%",
-        /*markers: {
-            startColor: "white",
-            endColor: "yellow",
-        },*/
+        // markers: {
+        //     startColor: "white",
+        //     endColor: "yellow",
+        // },
         scrub: 1,
     }
     });
@@ -61,7 +61,7 @@ mm.add("(max-width: 800px)", () => {
             start: "top 70%",
             end: "80% center",
             pin: "#stars2-bg",
-            // markers: { ME QUEDE AQUI
+            // markers: { 
             //     startColor: "white",
             //     endColor: "yellow",
             // },

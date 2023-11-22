@@ -97,13 +97,14 @@
 //width and background
 .card {
     width: 60%;
-    @include u.media (500px){
-        width: 100%;
-    }
     max-width: 800px;
     height: fit-content;
     border-radius: 25px;
     padding: 1.5rem 3rem;
+    @include u.media (500px){
+        width: 100%;
+        padding: 1.5rem 2rem;
+    }
 
     background-color: radial-gradient();
     background: radial-gradient(circle at top right, rgba(94, 94, 94, 0.307), transparent);
