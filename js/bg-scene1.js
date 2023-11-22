@@ -19,7 +19,7 @@ const tl = gsap.timeline({
         startColor: "white",
         endColor: "purple",
     },*/
-    scrub: 3,
+    scrub: 2,
 }
 });
 
@@ -32,7 +32,7 @@ const tl2 = gsap.timeline({
         startColor: "pink",
         endColor: "blue",
     },*/
-    scrub: 2,
+    scrub: 1,
 }
 });
 
@@ -45,7 +45,7 @@ const tl3 = gsap.timeline({
         startColor: "black",
         endColor: "black",
     },*/
-    scrub: 2,
+    scrub: 1,
 }
 });
 

@@ -27,7 +27,7 @@ section {
     min-height: 100vh;
     position: relative;
     
-    @include u.media(500px){
+    @include u.media(){
         overflow-x: hidden;
     }
 }

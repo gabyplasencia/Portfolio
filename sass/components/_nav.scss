@@ -29,7 +29,7 @@
     text-underline-offset: 0.3rem;
 }
 
-@include u.media(500px) {
+@include u.media() {
     .nav {
         display: none;
     }

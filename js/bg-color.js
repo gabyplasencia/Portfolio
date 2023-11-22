@@ -19,7 +19,7 @@ const tlBgColor2 = gsap.timeline({
         start: "top bottom",
         end: "50% 85%",
         // markers: {
-        //     startColor: "white",
+        //     startColor: "green",
         //     endColor: "black",
         // },
         scrub: 1,
