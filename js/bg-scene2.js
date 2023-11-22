@@ -73,12 +73,12 @@ mm.add("(min-width: 801px)", () => {
     gsap.to("#stars2-bg", {
         scale: 1.5,
         opacity: 1,
-        rotation: 8,
+        rotation: -8,
+        y: "130vh",
         scrollTrigger: {
             trigger: "#project",
             start: "top 95%",
-            end: "80% 60%",
-            pin: "#stars2-bg",
+            end: "80% 30%",
             // markers: {
             //     startColor: "white",
             //     endColor: "yellow",
