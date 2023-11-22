@@ -85,11 +85,17 @@
 
     &__divider {
         margin-block: 1.4rem;
+        @include u.media() {
+            width: 80%;
+        }
     }
 
     &__links {
         display: flex;
         gap: 2rem;
+        @include u.media() {
+            gap: 1rem;
+        }
     }
 
     &__link-text{

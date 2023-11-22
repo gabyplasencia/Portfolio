@@ -702,9 +702,19 @@ ul {
 .contact__divider {
   margin-block: 1.4rem;
 }
+@media (max-width: 800px) {
+  .contact__divider {
+    width: 80%;
+  }
+}
 .contact__links {
   display: flex;
   gap: 2rem;
+}
+@media (max-width: 800px) {
+  .contact__links {
+    gap: 1rem;
+  }
 }
 .contact__link-text {
   font-family: var(--regular-font);
