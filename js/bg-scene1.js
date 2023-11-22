@@ -50,16 +50,20 @@ const tl3 = gsap.timeline({
 });
 
 tl.to("#night-big-mountain", {
-    scale: 3,
+    scale: 4,
     x: 500,
-    y: "45vh",
-});
-tl.to("#night-big-mountain", {
-    scale: 3.7,
+    y: "60vh",
+})
+   .to("#night-big-mountain", {
+    scale: 2,
     x: 1500,
-    y: "90vh",
     opacity: 0,
 });
+// tl.to("#night-big-mountain", {
+//     x: 1500,
+//     y: "60vh",
+//     opacity: 0,
+// });
 
 tl2.to("#night-small-mountain", {
 scale: 2.5,

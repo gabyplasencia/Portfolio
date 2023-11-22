@@ -74,7 +74,7 @@ gsap.to("#day-sakura-island", {
 
 gsap.to("#sun", {
     scale: 1.2,
-    y: "-10vh",
+    y: "-20vh",
     scrollTrigger: {
         trigger: "#sun",
         start: "0% 75%",

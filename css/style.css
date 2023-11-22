@@ -146,7 +146,7 @@ ul {
   position: fixed;
   height: 40vh;
   top: 20vh;
-  right: 30%;
+  right: 35%;
   z-index: -90;
 }
 @media (max-width: 800px) {
@@ -171,7 +171,8 @@ ul {
 
 #night-big-mountain {
   transform-origin: top;
-  top: 2vh;
+  transform: scale(1.1);
+  top: 15vh;
   left: 17%;
   z-index: -80;
 }
@@ -184,7 +185,7 @@ ul {
 #night-small-mountain {
   transform-origin: top;
   height: 45vh;
-  top: 30%;
+  top: 35%;
   right: 58vw;
   z-index: -50;
 }
@@ -209,7 +210,7 @@ ul {
 #night-lake {
   width: 100vw;
   left: 0;
-  top: 63vh;
+  top: 68vh;
   z-index: -60;
 }
 @media (max-width: 800px) {
