@@ -56,11 +56,11 @@ mm.add("(max-width: 800px)", () => {
         scale: 2,
         opacity: 1,
         rotation: -5,
+        y: "130vh",
         scrollTrigger: {
             trigger: "#project",
             start: "top 70%",
             end: "80% center",
-            pin: "#stars2-bg",
             // markers: { 
             //     startColor: "white",
             //     endColor: "yellow",

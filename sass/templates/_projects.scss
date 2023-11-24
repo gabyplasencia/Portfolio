@@ -3,7 +3,7 @@
 #project {
     padding-inline: 5vw;
     margin-bottom: 25vh;
-    @include u.media (500px){
+    @include u.media (){
         margin-bottom: 15vh;
     }
 
