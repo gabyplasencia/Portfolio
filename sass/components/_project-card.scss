@@ -9,7 +9,7 @@
     &__title {
         @include u.regular-font(var(--fz-500), var(--fw-extrabold), var(--light-gray), 2px);
         text-transform: capitalize;
-        text-align: center;
+        text-align: left;
     }
 
     &__content {
