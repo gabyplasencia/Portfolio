@@ -1,7 +1,7 @@
 @use '../util/' as u;
 
 #project {
-    padding-inline: 15vw;
+    padding-inline: 10vw;
     margin-bottom: 25vh;
     @include u.media (){
         margin-bottom: 15vh;

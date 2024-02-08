@@ -1,7 +1,6 @@
 @use '../util/' as u;
 
 .card {
-
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     gap: 1.2rem;
@@ -10,7 +9,6 @@
     }
 
     &__mockup{
-        //height: 20rem;
         object-fit: contain;
         align-self: center;
         justify-self: center;
@@ -70,11 +68,13 @@
     .link-wrapper {
         margin: 1rem 0;
         gap: 2.5rem;
+        flex-wrap: wrap;
     }
 
     &__link {
         gap: 0.6rem;
         align-items: center;
+        flex-wrap: nowrap;
         @include u.regular-font(var(--fz-400), var(--fw-bold), var(--white), 0px);
 
         img {
@@ -110,6 +110,9 @@
     grid-template-columns: 0.8fr 1fr 0.3fr;
     gap: 3.5rem;
     row-gap: 1.2rem;
+    @include u.media (){
+        grid-template-columns: 1fr;
+    }
 }
 
 #pixel {
